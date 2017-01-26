@@ -1,0 +1,30 @@
+.flashmessages-error,
+.flashmessages-notice,
+.flashmessages-warning,
+.flashmessages-ok {
+    @extend .white-text;
+    @extend .card;
+    @extend .center-align;
+
+    padding: .2em .5em;
+
+    h3 {
+        font-size: 130%;
+    }
+}
+
+.flashmessages-error {
+    background-color: $error-color;
+}
+
+.flashmessages-notice {
+    background-color: $notice-color;
+}
+
+.flashmessages-warning {
+    background-color: $warning-color;
+}
+
+.flashmessages-ok {
+    background-color: $success-color;
+}

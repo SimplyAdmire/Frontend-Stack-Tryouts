@@ -1,0 +1,15 @@
+/**
+ * We need to import variables again, as $error-color would be undefined.
+ * This happens because the styles are imported in dropify.js and are parsed
+ * separately, meaning they have no global context and require all their dependencies
+ * to be imported. This might seem like overhead, but gives a clear and strict
+ * way to determine dependencies of styling.
+ */
+@import '../variables';
+
+.dropify-font-empty {
+    margin-right: 2px;
+}
+
+$dropify-error-color: $error-color;
+@import '~dropify/src/sass/dropify.scss';

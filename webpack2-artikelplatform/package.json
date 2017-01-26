@@ -1,0 +1,29 @@
+{
+    "name": "webpack2-artikelplatform",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "rebuild-nodesass": "npm rebuild node-sass",
+        "compile": "webpack --progress --colors",
+        "watch": "webpack --progress --colors --watch",
+        "build": "webpack --progress --colors -p"
+    },
+    "devDependencies": {
+        "babel-core": "^6.22.1",
+        "babel-loader": "^6.2.10",
+        "babel-preset-es2015": "^6.22.0",
+        "css-loader": "^0.26.1",
+        "dropify": "^0.2.1",
+        "extract-text-webpack-plugin": "beta",
+        "file-loader": "^0.9.0",
+        "jquery": "^3.1.1",
+        "materialize-css": "^0.97.8",
+        "node-sass": "^4.3.0",
+        "resolve-url-loader": "^1.6.1",
+        "sass-loader": "^4.1.1",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7",
+        "velocity-animate": "^1.4.0",
+        "webpack": "beta"
+    }
+}
